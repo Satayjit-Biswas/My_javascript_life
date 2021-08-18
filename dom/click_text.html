@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text"></h1>
+    <input id="input" type="text">
+    <button id="send">Submit</button>
+    <button id="add">add text </button>
+    <button id="set">set text </button>
+    <script>
+        function addtext(){
+            document.getElementById('text').innerText = "Satayjit biswas";
+        }
+        function settext(){
+            document.getElementById('text').innerText = "Set other text ";
+        }
+        const addt = document.getElementById('add').addEventListener('click',addtext);
+        const sett = document.getElementById('set').addEventListener('click',settext);
+        const inputtext = document.getElementById("input");
+
+        document.getElementById('send').addEventListener('click',function(){
+            document.getElementById('text').innerText = inputtext.value;
+            inputtext.value = '';
+        });
+
+
+        //be carefull if you need input text then use .value ok .....
+        // don't use innerText of Understead.....
+    </script>
+</body>
+</html>

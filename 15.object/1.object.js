@@ -11,7 +11,8 @@ console.log(a["y"]);
 // if you update data of object 
 a.y=240;
 console.log(a.y)
-
+// add data  
+a.x="u";
 // if you delete any data 
 delete a.y;
 console.log(a)

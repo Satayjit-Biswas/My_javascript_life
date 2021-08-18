@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to locar</h1>
+    <form action="#">
+        <input type="email" name="" id="gmail" placeholder="Your Email">
+        <br>
+        <input type="password" name="pass" id="password">
+        <br>
+        <button id = "send">Submit</button>
+    </form>
+    <script>
+        document.getElementById('send').addEventListener('click',function(){
+            const Gmail = document.getElementById('gmail').value;
+            const Pass = document.getElementById('password').value;
+            
+            if(Gmail == 'ami@gmail.com' && Pass == '123'){
+                window.location.href = 'next.html';
+            }
+            else{
+                alert("Sorry");
+            }
+        });
+    </script>
+</body>
+</html>

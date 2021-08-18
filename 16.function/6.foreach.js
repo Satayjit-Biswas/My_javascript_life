@@ -6,7 +6,8 @@ var a = [1,4,5,7,78,65,44,33,54,7567]
 //         console.log(data)
 //     }
 // )
-// 2 method
+// Let's see behind the scene
+//  2 method
 function c(aq){
     for(var i = 0; i < aq.length ; i++){
         console.log(aq[i])

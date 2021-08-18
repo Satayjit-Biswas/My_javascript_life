@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comment event</title>
+    <style>
+        #inputarea {
+            width: 80%;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="add_comment"></div>
+    <form action="#">
+        <textarea id="inputarea">
+        </textarea>
+        <br>
+        <button id="send">Post</button>
+    </form>
+        
+    <script>
+        document.getElementById('send').addEventListener('click',function(){
+            const textarea = document.getElementById('inputarea');
+            const p = document.createElement('p');
+            p.innerText = textarea.value;
+            const add = document.getElementById('add_comment');
+            add.appendChild(p);
+            // so i understand that 
+            // if you create any tag than must be declare variable and 
+            // next assign value and text;
+        });
+    </script>
+</body>
+
+</html>
