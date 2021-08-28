@@ -8,14 +8,16 @@
 </head>
 <body>
     <h1>Welcome to locar</h1>
-    <form action="#">
+    <div>
         <input type="email" name="" id="gmail" placeholder="Your Email">
         <br>
         <input type="password" name="pass" id="password">
         <br>
         <button id = "send">Submit</button>
-    </form>
+    </div>
+    
     <script>
+
         document.getElementById('send').addEventListener('click',function(){
             const Gmail = document.getElementById('gmail').value;
             const Pass = document.getElementById('password').value;
